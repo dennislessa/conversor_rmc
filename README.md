@@ -6,6 +6,7 @@ O Conversor RMC (um acrônimo para RSF, MDG e CSV) é um conversor para DSM em H
 * LIMBO
 * MoJo
 
+
 ### Formato RSF
 
 O formato RSF é o formato gerado pela ferramenta Rigi Editor utilizado para representar os diversos tipos de relacionamentos entre os elementos de um sistema. Seu formato está representado abaixo.
