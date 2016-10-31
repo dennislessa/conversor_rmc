@@ -97,4 +97,4 @@ como 1 em CSV e 0 caso contrário.
 
 ### Fluxo de execução
 
-![Novo Repositório no Github](img/fluxo.png)
+![Novo Repositório no Github](img/fluxo_execucao.png)
