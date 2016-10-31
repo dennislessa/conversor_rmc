@@ -85,3 +85,11 @@ contain ModuleName.ss elemento1
 contain ModuleName.ss elemento2
 ...
 contain ModuleName.ss elementoN
+
+### Formato CSV
+
+Esse formato é um dos vários formatos utilizados pela ferramenta Weka para a uti-
+lização de algoritmos de categorização, agrupamento, associação e regressão. Uti-
+lizando os scripts desenvolvidos, converteu-se os dados contidos na DSM para o
+formato CSV. Onde há dependência entre os elementos na DSM é representado
+como 1 em CSV e 0 caso contrário.
