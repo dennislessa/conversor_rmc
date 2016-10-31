@@ -7,6 +7,9 @@ desenvolvido para auxiliar na execução de algoritmos utilizados para a recuper
 * LIMBO
 * MoJo
 
+Abaixo é apresentado uma imagem que mostra o fluxo de execução do trabalho realizado
+e os momentos em que são utilizados o conversor.
+
 ![Novo Repositório no Github](img/fluxo_execucao.png)
 
 ### Formato RSF
