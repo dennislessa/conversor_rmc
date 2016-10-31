@@ -12,7 +12,7 @@ O formato RSF é o formato gerado pela ferramenta Rigi Editor utilizado para rep
 
 RelationshipType Module1 Module2
 
-Em RelationshipTyperepresenta o tipo do relacionamento (contain, call, depend, etc) entre Module1eModule2e estes representam os elementos do sistemas. Para este trabalho foi considerado apenas o tipo "depend"para representar a dependência entre os módulos 1 e 2, isto é, o elemento 1 depende do módulo 2, como apresentado abaixo.
+Em RelationshipType representa o tipo do relacionamento (contain, call, depend, etc) entre Module1 e Module2 e estes representam os elementos do sistemas. Para este trabalho foi considerado apenas o tipo depend para representar a dependência entre os módulos 1 e 2, isto é, o elemento 1 depende do módulo 2, como apresentado abaixo.
 
 depend Module1 Module2
 
