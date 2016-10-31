@@ -81,10 +81,10 @@ input, portanto, fez-se necessário a conversão do tipo
  .bunch para o tipo .rsf.
 Assim, após a conversão, o arquivo RSF gerado terá o seguinte formato:
 
-contain ModuleName.ss elemento1
-contain ModuleName.ss elemento2
-...
-contain ModuleName.ss elementoN
+* contain ModuleName.ss elemento1
+* contain ModuleName.ss elemento2
+* ...
+*contain ModuleName.ss elementoN
 
 ### Formato CSV
 
