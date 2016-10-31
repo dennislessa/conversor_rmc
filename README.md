@@ -24,3 +24,43 @@ contain Cluster.ss Module2
 Esse formato tem como relacionamento o valor contain que significa que o Cluster.ss contém o elemento Module2. O formato RSF é requerido pelas ferramentas ACDC e MoJo. A primeira ferra menta tem como input e output arquivos de formato RSF. Como entrada o arquivo deve ter relacionamento depend expressando o relacionamento de dependência entre as entidades do sistema. A saída gerada pela ferramenta é um arquivo de mesmo formato contendo o agrupamento do sistema. A segunda ferramenta, MoJo, tem como inputs dois arquivos de formato RSF representando agrupamentos.
 
 O primeiro arquivo deve ser a saída gerada por algum algoritmo de agrupamento e o segundo deve ser um agrupamento realizado por um especialista. A saída gerada pela métrica é um número inteiro positivo expressando a quantidade mínima de operações necessárias para se transformar o primeiro agrupamento no segundo.
+
+
+### Formato Bunch
+
+O formato de entrada exigido pela ferramenta Bunch para representar as dependên-
+cias de cada elemento do sistema é uma 4-tupla. Cada uma, possui 4 campos, dos
+quais os dois primeiros são os módulos, o terceiro, opcional, é o peso para a relação
+entre os módulos e o último, também opcional, representa o tipo de relação entre os
+módulos. Quando não há denição das ponderações ou o tipo dos relacionamentos,
+signica que todos os tipos de relacionamento possuem mesma ponderação igual a 1.
+
+Module1 Module2 [RelationshipType [RelationshipType]]
+
+Para a realização deste trabalho não foram especicados os tipos de relacionamento
+e todas os relacionamentos possuem o mesmo peso. Portanto o formato de entrada
+para a ferramenta, representa apenas relação de dependência do módulo 1 para com
+o módulo 2.
+
+Module1 Module2
+
+Assim, como foi denido o formato de entrada, há uma dependência entre o módulo
+1 e o módulo 2, ou seja, o módulo 1 depende do módulo 2. Neste trabalho, usando os
+scripts desenvolvidos, esse formato é gerado a partir da DSM seguindo as denições
+apresentadas anteriormente em que as dependências da DSM são traduzidas para o
+formato usado pela ferramenta Bunch.
+Ao realizar o agrupamento, a ferramenta Bunch gera um arquivo
+ .bunch
+ que re-
+presenta o resultado do agrupamento [33], isto é, os clusters gerados e os elementos
+contidos nesses clusters, representado abaixo.
+SS(ModuleName) = elemento1, elemento2, ..., elementoN
+Como apresentado anteriormente, a ferramenta MoJo utiliza o formato RSF como
+input, portanto, fez-se necessário a conversão do tipo
+ .bunch para o tipo .rsf.
+Assim, após a conversão, o arquivo RSF gerado terá o seguinte formato:
+
+contain ModuleName.ss elemento1
+contain ModuleName.ss elemento2
+...
+contain ModuleName.ss elementoN
