@@ -84,7 +84,7 @@ Assim, após a conversão, o arquivo RSF gerado terá o seguinte formato:
 * contain ModuleName.ss elemento1
 * contain ModuleName.ss elemento2
 * ...
-*contain ModuleName.ss elementoN
+* contain ModuleName.ss elementoN
 
 ### Formato CSV
 
