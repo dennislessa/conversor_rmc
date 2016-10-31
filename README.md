@@ -7,6 +7,7 @@ desenvolvido para auxiliar na execução de algoritmos utilizados para a recuper
 * LIMBO
 * MoJo
 
+![Novo Repositório no Github](img/fluxo_execucao.png)
 
 ### Formato RSF
 
@@ -93,8 +94,3 @@ lização de algoritmos de categorização, agrupamento, associação e regress�
 lizando os scripts desenvolvidos, converteu-se os dados contidos na DSM para o
 formato CSV. Onde há dependência entre os elementos na DSM é representado
 como 1 em CSV e 0 caso contrário.
-
-
-### Fluxo de execução
-
-![Novo Repositório no Github](img/fluxo_execucao.png)
