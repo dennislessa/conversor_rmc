@@ -20,6 +20,7 @@
 
                 <optgroup label="Gerar scripts">
                     <option value="gerar_bunch">Gerar script BUNCH</option>
+                    <option value="gerar_tgf">Gerar script TGF</option>
                     <option value="gerar_rsf">Gerar script ACDC</option>
                     <option value="gerar_csv">Gerar script Weka</option>
                 </optgroup>
