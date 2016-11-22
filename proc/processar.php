@@ -11,6 +11,10 @@ if (is_array($input_post) && (count($input_post) > 0)):
         case 'gerar_bunch': /* OK */
             dsm_to_input_bunch($input_post['dependencias']);
             break;
+        
+        case 'gerar_tgf':  /* OK */
+            dsm_to_input_tgf($input_post['dependencias']);
+            break;
 
         case 'gerar_rsf': /* OK */
             dsm_to_rsf($input_post['dependencias']);
@@ -32,11 +36,11 @@ if (is_array($input_post) && (count($input_post) > 0)):
             arqref_to_rsf($input_post['conteudo']);
             break;
         
-        case 'rsf_to_model_analizo':
+        case 'rsf_to_model_analizo': /* OK */
             rsf_to_model_analizo($input_post['conteudo']);
             break;
         
-        case 'conta_cluster':
+        case 'conta_cluster': /* OK */
             rsf_count_clusters($input_post['conteudo']);
             break;
         default:
