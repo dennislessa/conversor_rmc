@@ -29,7 +29,7 @@ function dsm_to_input_tgf(array $dependencias) {
         $aux = $entidades;
         $entidades = [];
         for($i=0,$j=count($aux); $i<$j;$i++):
-            $entidades[$aux[$i]] = $i;
+            $entidades[$aux[$i]] = $i+1;
         endfor;
         
         foreach($entidades as $i => $v):
@@ -44,7 +44,7 @@ function dsm_to_input_tgf(array $dependencias) {
             $e1 = $e[0];
             $e2 = $e[1];
             
-            echo $entidades[$e1] . ' ' . $entidades[$e2] . '<br/>';
+            echo $entidades[$e1] . ' ' . $entidades[$e2] . ' 1 1<br/>';
             $i++;
         endforeach;
     endif;
